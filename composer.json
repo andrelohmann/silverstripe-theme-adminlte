@@ -15,5 +15,17 @@
 		"composer/installers": "*",
 		"almasaeed2010/adminlte":"~2.0"
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "stable",
+	"scripts": {
+    "post-install-cmd": [
+      "cp -r vendor/almasaeed2010/bootstrap themes/adminlte/",
+	    "cp -r vendor/almasaeed2010/dist themes/adminlte/",
+		  "cp -r vendor/almasaeed2010/plugins themes/adminlte/"
+    ],
+    "post-update-cmd": [
+      "cp -r vendor/almasaeed2010/bootstrap themes/adminlte/",
+	    "cp -r vendor/almasaeed2010/dist themes/adminlte/",
+		  "cp -r vendor/almasaeed2010/plugins themes/adminlte/"
+    ]
+  }
 }
