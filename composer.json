@@ -1,0 +1,19 @@
+{
+	"name": "andrelohmann-silverstripe-themes/adminlte",
+	"type": "silverstripe-theme",
+	"description": "Bootstrap Theme for Silverstripe",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "framework"],
+	"authors": [
+		{
+			"name": "Andre Lohmann",
+			"homepage": "https://github.com/andrelohmann"
+		}
+	],
+	"require": {
+		"php": ">=5.4",
+		"composer/installers": "*",
+		"almasaeed2010/adminlte":"~2.0"
+	},
+	"minimum-stability": "stable"
+}
