@@ -23,14 +23,14 @@ put the follwoing post install and post updates scripts into your composer.json
 
     "scripts": {
         "post-install-cmd": [
-            "cp -r vendor/almasaeed2010/bootstrap themes/adminlte/",
-      	    "cp -r vendor/almasaeed2010/dist themes/adminlte/",
-      		  "cp -r vendor/almasaeed2010/plugins themes/adminlte/"
+            "cp -r vendor/almasaeed2010/adminlte/bootstrap themes/adminlte/",
+            "cp -r vendor/almasaeed2010/adminlte/dist themes/adminlte/",
+            "cp -r vendor/almasaeed2010/adminlte/plugins themes/adminlte/"
         ],
         "post-update-cmd": [
-            "cp -r vendor/almasaeed2010/bootstrap themes/adminlte/",
-      	    "cp -r vendor/almasaeed2010/dist themes/adminlte/",
-      		  "cp -r vendor/almasaeed2010/plugins themes/adminlte/"
+            "cp -r vendor/almasaeed2010/adminlte/bootstrap themes/adminlte/",
+            "cp -r vendor/almasaeed2010/adminlte/dist themes/adminlte/",
+            "cp -r vendor/almasaeed2010/adminlte/plugins themes/adminlte/"
         ]
     },
 ```
