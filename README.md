@@ -25,12 +25,16 @@ put the follwoing post install and post updates scripts into your composer.json
         "post-install-cmd": [
             "cp -r vendor/almasaeed2010/adminlte/bootstrap themes/adminlte/",
             "cp -r vendor/almasaeed2010/adminlte/dist themes/adminlte/",
-            "cp -r vendor/almasaeed2010/adminlte/plugins themes/adminlte/"
+            "cp -r vendor/almasaeed2010/adminlte/plugins themes/adminlte/",
+            "sed -i -e 's/$.support.focusinBubbles = !!($.browser.msie);/$.support.focusinBubbles = !!($.browser.msie) && !$.browser.msie;/g' framework/thirdparty/jquery-entwine/dist/jquery.concrete-dist.js",
+            "sed -i -e 's/$.support.focusinBubbles = !!($.browser.msie);/$.support.focusinBubbles = !!($.browser.msie) && !$.browser.msie;/g' framework/thirdparty/jquery-entwine/dist/jquery.entwine-dist.js"
         ],
         "post-update-cmd": [
             "cp -r vendor/almasaeed2010/adminlte/bootstrap themes/adminlte/",
             "cp -r vendor/almasaeed2010/adminlte/dist themes/adminlte/",
-            "cp -r vendor/almasaeed2010/adminlte/plugins themes/adminlte/"
+            "cp -r vendor/almasaeed2010/adminlte/plugins themes/adminlte/",
+            "sed -i -e 's/$.support.focusinBubbles = !!($.browser.msie);/$.support.focusinBubbles = !!($.browser.msie) && !$.browser.msie;/g' framework/thirdparty/jquery-entwine/dist/jquery.concrete-dist.js",
+            "sed -i -e 's/$.support.focusinBubbles = !!($.browser.msie);/$.support.focusinBubbles = !!($.browser.msie) && !$.browser.msie;/g' framework/thirdparty/jquery-entwine/dist/jquery.entwine-dist.js"
         ]
     },
 ```
